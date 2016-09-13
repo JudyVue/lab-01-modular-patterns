@@ -5,8 +5,9 @@ const assert = require ('assert');
 
 describe('testing module greet', function(){
   describe('testing #sayMyMotherEffingName', function(){
-    it('should be a string of hello (name)', function(){
-      assert.equal('Hello Judy');
+    it('should return Hello Judy', function(){
+      let result = greeting.sayMyMotherEffingName('Judy');
+      assert.ok(result === 'Hello Judy', 'was not Hello Judy');
     });
   });
 });
