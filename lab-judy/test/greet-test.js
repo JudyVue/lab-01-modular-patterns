@@ -11,11 +11,3 @@ describe('testing module greet', function(){
     });
   });
 });
-
-describe('testing to see if the argument is a string', function(){
-  it('should return a string and not a number', function(){
-    let result = greeting.sayMyMotherEffingName(1);
-    if (typeof argument !== 'string')
-      assert.fail(result, 'Hello Judy', 'a string wasnt entered as arg', '=');
-  });
-});
