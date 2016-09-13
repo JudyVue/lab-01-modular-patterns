@@ -4,7 +4,7 @@ module.exports = exports = {};
 
 exports.sayMyMotherEffingName = function(name){
   //checks if argument is passed into function, throws error if not
-  if (arguments.length === 0)
+  if (!name)
     throw new Error('you forgot to pass an arg, dummy.');
-  return 'Hello ' + name;
+  return `Hello ${name}`;
 };
